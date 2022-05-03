@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .content{
     display: flex;
     flex-flow: row wrap;
@@ -17,6 +21,27 @@
 .right{
     display: flex;
     flex-direction: column;
+    width: 60vw;
+    background-color: lightgrey;
+    justify-content: center;
+}
+.top, .form-top, .form-bottom{
+    padding-left: 4vw;
+}
+.form-top{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.input{
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.form-title{
+    width: 100%;
 }
 
 /*for mobile*/
