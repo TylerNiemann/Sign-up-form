@@ -102,7 +102,10 @@ button {
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
-
+input:focus {
+    border-color: blue;
+    box-shadow: 3px 1px 1px grey;
+  }
 /*for mobile*/
 @media only screen and (max-width: 650px){
     *{
