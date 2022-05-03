@@ -52,20 +52,55 @@ h2{
 .top, .form-top, .form-bottom{
     padding-left: 4vw;
 }
+.top{
+    padding-right: 10vw;
+    gap: 10px;
+}
+.top > p{
+    font-size: 25px;
+}
+.top > p:last-child{
+    margin: 20px;
+    margin-left: 0px;
+}
 .form-top{
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: white;
 }
 .input{
     width: 40%;
     display: flex;
     flex-flow: column wrap;
 }
+input{
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
 .form-title{
     width: 100%;
+    font-size: 30px;
+}
+.form-bottom{
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.form-bottom > p{
+    margin: 10px;
+    margin-left: 0;
+}
+button {
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 /*for mobile*/
@@ -95,7 +130,7 @@ h2{
     }
     .right{
         width: auto;
-        height: 90vh;
+        height: auto;
     }
     .form-top{
         justify-content: center;
