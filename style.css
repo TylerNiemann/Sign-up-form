@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Norse;
+    src: url('Norse-Bold.otf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +19,26 @@
     background-size: auto;
     width: 40vw;
     background-position: center;
+}
+.logo{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    top: 20vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+.odin{
+    height: 10vh;
+}
+h2{
+    color: white;
+    font-size: 80px;
+    font-family: Norse;
+    font-weight: 900;
 }
 
 /*right side*/
@@ -46,14 +70,61 @@
 
 /*for mobile*/
 @media only screen and (max-width: 650px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
     .content{
-        display: flex;
-        flex-direction: column;
+        flex-flow: column;
+        text-align: center;
+        height: auto;
+    }
+    .top{
+        padding: 10px;
     }
     .picture{
         display: flex;
-        height: 100vh;
+        height: 10vh;
         width: auto;
+        background-size: 100vw;
     }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .right{
+        width: auto;
+        height: 90vh;
+    }
+    .form-top{
+        justify-content: center;
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .form-bottom{
+        margin-bottom: 0px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
     
 }
